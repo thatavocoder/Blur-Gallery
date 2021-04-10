@@ -1,0 +1,63 @@
+body{
+    background-image: url(../Pics/friends1.jpg);
+    background-size: cover;
+}
+
+.outer-container{
+    width: 50vw;
+    height: 30vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 0.5vw solid rgb(0, 0, 0);
+}
+
+.middle-container{
+    width: 45vw;
+    height: 25vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 0.3vw solid;
+}
+
+.inner-container{
+    width: 45vw;
+    height: 25vw;
+    background-color: black;
+    opacity: 0.6;
+    margin-bottom: 1vw;
+}
+
+.text{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bolder;
+    font-family: Amaranth;
+    font-size: 1.5vw;
+    width: 30vw;
+}
+
+.text::before{
+    content: "\201C";
+    font-size: 4vw;
+}
+
+.text::after{
+    content: "\201D";
+    font-size: 4vw;
+}
+
+p{
+    color: rgb(197, 197, 197);
+    font-family: Amaranth;
+    font-size: 1vw;
+    text-align: center;
+}
