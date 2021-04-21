@@ -19,7 +19,7 @@
     width: 30vw;
     border: 0.5vw solid black;  
     border-radius: 50vw;
-    position: fixed;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -89,8 +89,20 @@
     border: 0.2vw solid white;
   }
   
+  .warn{
+    color: white;
+    text-align: center;
+  }
+
+
   /* The Transformation */
   .gallery:hover img {
     filter: blur(0);
     transform: scale(1.1);
+  }
+
+  @media only screen and (min-width: 992px) {
+    .textcontainer {
+      position: fixed;
+    }
   }
